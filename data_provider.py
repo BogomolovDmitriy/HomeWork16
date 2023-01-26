@@ -1,14 +1,12 @@
-path = "guid.txt"
+import os
 
-# def get_data(path):
-#     data = open(path, "r")
-#     line_data = list(i for i in data)
-#     data.close()
-#     return line_data
+def path(name_file): # определяем путь к файлу
+    path = os.path.abspath(name_file) 
+    return path
 
-# print(get_data(path))
+def readFile(file): # считываем данные с файла
+    data = open(file, "r")
+    line = list(i for i in data)
+    data.close()
+    return line
 
-data = open(path, "r")
-for line in data:
-    print(line)
-data.close()
