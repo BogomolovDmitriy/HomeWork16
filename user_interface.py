@@ -8,6 +8,3 @@ def view(name_file): # получаем данные и передаем их н
     log.logger(length)
     return data
 
-d = [i for i in (view("guid.txt")) if "Ivanov" in i]
-print(d)
-# view("guid.txt")
