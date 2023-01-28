@@ -1,10 +1,10 @@
 
 def creat(data):
-    t = data
-    style = 'style="font-size:22px;"'
     html = '<html>\n <head></head>\n <body>\n'
-    html += '    <p {}> Temperature: {} c</p>\n'\
-        .format(style, t)
+    style = 'style="font-size:22px;"'
+    for i in data:
+        html += '    <p {}> user: {} </p>\n'\
+            .format(style, i)
     html += '   </body>\n</html>'
 
     with open('index.html', "w") as page:
